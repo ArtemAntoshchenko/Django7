@@ -1,6 +1,7 @@
 from django import forms
 
 class FeedbackForm(forms.Form):
-    name=forms.CharField
-    email=forms.EmailField
-    message=forms.TextInput
+    check=forms.BooleanField(
+    label='CheckBox', required=False)
+
+    

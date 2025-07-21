@@ -19,6 +19,5 @@ from django.urls import path
 from feedback import views
 
 urlpatterns = [
-    path('userfeedback', views.feedback),
-    path('thanks/', views.feedback_thanks)
+    path('bool', views.BooleanField),
 ]
